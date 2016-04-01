@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<script src="../vender/js/viewport.js"></script>
+	<title>翻牌小游戏</title>
+	<link rel="stylesheet" href="../vender/css/animate.min.css" />
+	<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+	<div class="wrap">
+		<div class="page index current">
+			<h1 class="title">国信小游戏集锦——记忆翻牌游戏</h1>
+			<a class="btn orangeBtn" data-type="start">开始游戏</a>
+			<a class="btn" data-type="rule">游戏规则</a>
+			<p class="ts">版本：V1.0 | 开发者：Cici</p>
+		</div>
+		<div class="page game">
+			<div class="gameBar">
+				<div class="gbDiv">第<b class="gbs level"></b>关</div>
+				<div class="gbDiv">剩余：<b class="gbs time"></b>秒</div>
+			</div>
+			<div class="gameView">
+				<div class="gvIn"></div>
+			</div>
+		</div>
+		<div class="page rule">
+			<div class="rIn">
+				<h3 class="rTit">游戏规则：</h3>
+				<dl class="rDl">
+					<dt>游戏目标：</dt>
+					<dd>翻牌配对</dd>
+					<dt>如何开始：</dt>
+					<dd>游戏加载完成后，点击“开始游戏”即可游戏，也可以点击“游戏规则”，了解游戏规则后再进行游戏</dd>
+					<dt>游戏介绍：</dt>
+					<dd>
+						1.游戏随机从20张牌中抽取9张进行游戏，每组为2张相同的牌，共18张牌。 <br />
+						2.每关默认3S看牌时间，随后翻转至背面。用户点击卡牌，直至连续翻到两张相同的为胜利，当9组全部翻到则过关。如不是翻到连续两张相同的，则需要重新翻。 <br />
+						3.游戏共有3关，在规定时间内通过为挑战成功。 <br />
+						4.如果某关在规定时间内没有通过，则需要从头开始游戏。 <br />
+						6.请用手机查看，在PC端仅支持现代浏览器，建议使用chrome与firefox。 <br />
+					</dd>
+					<dt>操作方法：</dt>
+					<dd>游戏中使用鼠标点击翻牌</dd>
+				</dl>
+				<a class="btn orangeBtn" data-type="home">返回首页</a>
+			</div>
+		</div>
+		<div class="page result">
+			<div class="res suc">
+				<p class="rWrd">恭喜，成功了！</p>
+				<a class="btn orangeBtn">分享好友</a>
+			</div>
+			<div class="res err">
+				<p class="rWrd">这是一次失误……</p>
+				<a class="btn orangeBtn" data-type='again'>再玩一次</a>
+			</div>
+		</div>
+	</div>
+	<script src="../vender/js/zepto.min.js"></script>
+	<script src="../vender/js/pxloader-images.min.js"></script>
+	<script src="../vender/js/base.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/game.js"></script>
+</body>
+</html>
